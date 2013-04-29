@@ -1,0 +1,26 @@
+[
+  {
+    "repository": "android_kernel_motorola_msm8960-common",
+    "target_path": "kernel/motorola/msm8960",
+    "branch": "jellybean",
+    "dep_type": "kernel"
+  },
+  {
+    "repository": "android_device_moto_msm8960-common",
+    "target_path": "device/motorola/msm8960-common",
+    "branch": "jellybean",
+    "dep_type": "device"
+  },
+  {
+    "repository": "android_hardware_qcom_audio-caf",
+    "target_path": "hardware/qcom/audio-caf",
+    "branch": "jellybean",
+    "dep_type": "hardware"
+  },
+  {
+    "repository": "android_hardware_qcom_display-caf",
+    "target_path": "hardware/qcom/display-caf",
+    "branch": "jellybean",
+    "dep_type": "hardware"
+  }
+]

@@ -25,8 +25,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 #misc
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.log.aplogd.enable=1 \
-    ro.product.model.exif=XT897C
+    persist.log.aplogd.enable=1
 
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -35,16 +34,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #telephony
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=1 \
+    telephony.rilV7NeedCDMALTEPhone=true \
     ro.telephony.ril.v3=signalstrength \
-    DEVICE_PROVISIONED=1 \
     ro.telephony.default_network=8 \
     ro.cdma.home.operator.numeric=310120 \
     ro.cdma.home.operator.alpha=Sprint \
+    ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83 \
     ro.config.svlte1x=true \
     ro.cdma.subscription=1 \
     persist.radio.add_power_save=1 \
     ro.mot.deep.sleep.supported=true \
-    ro.mot.hw.uaprof=http://device.sprintpcs.com/Motorola/XT897/latest
+    ro.mot.hw.uaprof=http://device.sprintpcs.com/Motorola/XT897/latest \
+    DEVICE_PROVISIONED=1
 
 # IDC
 PRODUCT_COPY_FILES += \
